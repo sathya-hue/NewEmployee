@@ -13,7 +13,6 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
-@Service
 public class BookController {
 
     @Autowired
@@ -73,9 +72,7 @@ public class BookController {
         }
     }
 
-
     @DeleteMapping("/deleteBokById/{id}")
-
     public ResponseEntity<HttpStatus> deleteBook(@PathVariable Long id) {
         try {
             bookRepository.deleteById(id);
@@ -86,9 +83,7 @@ public class BookController {
     }
 
 
-
-    @DeleteMapping("/deleteAllBooks")
-
+    @DeleteMapping("/deleteAllBoks")
     public ResponseEntity<HttpStatus> deleteAllBooks() {
         try {
             bookRepository.deleteAll();
