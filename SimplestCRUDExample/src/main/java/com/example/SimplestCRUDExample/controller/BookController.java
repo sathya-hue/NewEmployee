@@ -72,7 +72,9 @@ public class BookController {
         }
     }
 
+
     @DeleteMapping("/deleteBokById/{id}")
+
     public ResponseEntity<HttpStatus> deleteBook(@PathVariable Long id) {
         try {
             bookRepository.deleteById(id);
@@ -83,7 +85,9 @@ public class BookController {
     }
 
 
-    @DeleteMapping("/deleteAllBoks")
+
+    @DeleteMapping("/deleteAllBooks")
+
     public ResponseEntity<HttpStatus> deleteAllBooks() {
         try {
             bookRepository.deleteAll();
