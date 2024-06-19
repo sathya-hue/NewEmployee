@@ -28,7 +28,7 @@ public class BookController {
             }
 
             return new ResponseEntity<>(bookList, HttpStatus.OK);
-        } catch(Exception ex) {
+        } catch (Exception ex) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -88,6 +88,9 @@ public class BookController {
         try {
             bookRepository.deleteAll();
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+            System.out.println("ABc");
+            System.out.println("ASD");
+            System.out.println("123");
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
