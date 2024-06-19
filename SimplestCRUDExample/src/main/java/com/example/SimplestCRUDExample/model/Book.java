@@ -23,4 +23,7 @@ public class Book {
     @Column
     private String author;
 
+    @Column
+    private String dateOfBirth;
+
 }

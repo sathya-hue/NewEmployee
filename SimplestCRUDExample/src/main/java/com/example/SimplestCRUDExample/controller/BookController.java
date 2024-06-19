@@ -81,6 +81,8 @@ public class BookController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
+
     @DeleteMapping("/deleteAllBooks")
     public ResponseEntity<HttpStatus> deleteAllBooks() {
         try {
