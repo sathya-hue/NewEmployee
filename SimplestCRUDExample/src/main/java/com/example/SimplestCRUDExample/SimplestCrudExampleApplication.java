@@ -6,8 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SimplestCrudExampleApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SimplestCrudExampleApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SimplestCrudExampleApplication.class, args);
+        System.out.println("Change 1"0);
+        System.out.println("Change 2"0);
+        System.out.println("Change 3"0);
+    }
 
 }
